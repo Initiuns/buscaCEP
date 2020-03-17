@@ -1,0 +1,44 @@
+<!--
+   Utilizei um método AJAX diferente para trazer as informações diretamente do site viacep
+                                Felipe Assis De Souza
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscador de CEP</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+  <div class="box">
+
+    <h2>Busca de CEP</h2>
+    <hr>
+    <br>
+    <form name="formCep" method="GET">
+      <input type="text" name="cep" id="center" placeholder="Digite seu CEP" onblur="buscarCEP(this.value);"
+        autocomplete="off">
+      <br>
+      <small>Digite seu CEP em seguida clique fora para aparecer o endereço</small>
+      <br><br>
+      <hr><br>
+      <input type="text" placeholder="Endereço" name="endereco" id="endereco" autocomplete="off">
+      <input type="text" placeholder="Bairro" name="bairro" id="bairro" autocomplete="off">
+      <input type="text" placeholder="Complemento" name="complemento" id="complemento" autocomplete="off">
+      <input type="text" placeholder="Cidade" name="cidade" id="cidade" autocomplete="off">
+      <input type="text" placeholder="Estado" name="estado" id="estado" autocomplete="off">
+    </form>
+    <br>
+    <hr>
+    <br><br><br>
+    <small>Desenvolvido por Felipe Assis - Todos os direitos Reservados</small>
+  </div>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
